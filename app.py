@@ -1,9 +1,7 @@
-import pandas as pd
-import numpy as np
 import streamlit as st
+from src.extraction import load_data
 
-def load_data(_file):
-    return pd.read_csv(_file)
+st.set_page_config(layout='wide')
 
 def main():
     file = 'data/processed/bikes_completed.csv'

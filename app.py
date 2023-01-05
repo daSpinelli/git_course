@@ -38,6 +38,9 @@ def create_dataframe_section(df):
 def main():
     file = 'data/processed/bikes_completed.csv'
     df = load_data(file)
+    
+    create_dataframe_section(df)
+    
     st.dataframe(df)
 
 if __name__ == '__main__':

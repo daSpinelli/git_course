@@ -1,4 +1,5 @@
 import pandas as pd
 
-def load_data(_file):
-    return pd.read_csv(_file)
+
+def load_data():
+    return pd.read_csv("data/bikes_completed.csv")
